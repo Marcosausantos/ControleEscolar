@@ -1,0 +1,7 @@
+﻿{
+    "grid": [
+        { "nome": "Empresa.Id", "caption": "Código", "class": "col-md-1", "type": "inputsubitem", "readonly": true },
+        { "nome": "Empresa.Nome", "caption": "Nome", "class": "col-md-9", "type": "inputsubitem", "readonly": true }
+    ]
+}
+

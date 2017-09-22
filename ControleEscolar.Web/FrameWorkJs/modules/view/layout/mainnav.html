@@ -1,0 +1,65 @@
+﻿<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="divider"></li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" href="#/home"><i class="icon-speedometer"></i> Home </a>
+            </li>
+            <li class="nav-title">
+                Módulos
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.components')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.components')}" href="#"><i class="icon-home"></i> Secretária</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" href="#/aluno"><i class="icon-people"></i> Cadastro de Aluno</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" ng-class="{open: $state.includes('app.icons')}">
+                <a class="nav-link" ng-class="{active: $state.includes('app.icons')}" href="#"><i class="icon-graduation"></i> Coordenação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> Contas a Pagar </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-note"></i> Contas a Receber</a>
+            </li>
+          
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.components')}">
+                <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.components')}" href="#"><i class="icon-link"></i> Integração</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" href="#/sensomec"><i class="icon-envelope"></i> Senso MEC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref-active="active" href="#"><i class="icon-link"></i> Exportação Contábil</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-paper-plane"></i> Relatórios</a>
+            </li>
+
+           <!--    
+            <li class="divider"></li>
+            <li class="nav-title">
+                Integração
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+                <a class="nav-link" ng-class="{active: $state.includes('app.pages')}" href="#/sensomec"><i class="icon-envelope"></i> Senso MEC </a>
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+                <a class="nav-link" ng-class="{active: $state.includes('app.pages')}" href="#"><i class="icon-link"></i> Exportação Contábil </a>
+            </li>
+            -->
+
+               <li class="nav-title">
+                Segurança
+            </li>
+            <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+                <a class="nav-link" ng-class="{active: $state.includes('app.pages')}" href="#/usuario"><i class="icon-user"></i> Cadastro de Usuário </a>
+            </li>
+        </ul>
+    </nav>
+</div>

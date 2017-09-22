@@ -1,0 +1,7 @@
+﻿{
+    "grid": [
+        { "nome": "Id", "caption": "Código", "class": "", "type": "input", "readonly": true },
+        { "nome": "Nome", "caption": "Nome", "class": "col-lg-8", "type": "input", "readonly": true }
+    ]
+}
+

@@ -1,0 +1,11 @@
+﻿<div class="form-group">
+    <button class="btn btn-primary" type="submit" validation-submit="Form" ng-click="vm.save(false)">
+        <i class="fa fa-check"></i> Salvar
+    </button>
+    <button class="btn btn-warning" ng-click="vm.readonly = vm.utils.setreadonlyinput(false); vm.liberaEnvio()" ng-show="vm.readonly">
+        <i class="fa fa-pencil"></i> Editar
+    </button>
+    <button class="btn btn-link" ng-click="vm.cancel()">
+        <i class="fa fa-chevron-left"></i> Voltar
+    </button>
+</div>

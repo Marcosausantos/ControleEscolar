@@ -1,0 +1,12 @@
+D:\Sources\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.dll
+D:\Sources\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.pdb
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.csprojResolveAssemblyReference.cache
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.dll
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.pdb
+D:\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.dll.config
+D:\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.dll
+D:\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.pdb
+D:\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.csprojResolveAssemblyReference.cache
+D:\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.csproj.CoreCompileInputs.cache
+D:\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.dll
+D:\controleescolar\ControleEscolar.Web\obj\Debug\ControleEscolar.Web.pdb

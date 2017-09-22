@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="controleescolar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Escolar</title>
+
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+    <!--CoreUi-->
+    <link href="../../../../Content/Theme/ng-CoreUi/css/style.css" rel="stylesheet" />
+    <link href="../../../../Content/Theme/ng-CoreUi/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../../../Content/Theme/ng-CoreUi/css/simple-line-icons.css" rel="stylesheet" />
+    <!--ngToast-->
+    <link href="../../../../Scripts/plugins/toast/ngToast.css" rel="stylesheet" />
+    <link href="../../../../Scripts/plugins/toast/ngToast-animations.min.css" rel="stylesheet" />
+
+</head>
+<body ng-controller="logincontroller as vmLogin" class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden" ng-style="!vmLogin.test ? {'background-image':'url(../../../Content/Theme/ng-CoreUi/img/bg.jpg)'} : {}">
+    <toast></toast>
+
+    <div ng-include="'layout/navbar.html'" ng-if="vmLogin.test"></div>
+
+    <div ng-include="'layout/mainnav.html'" ng-if="vmLogin.test"></div>
+
+    <div class="app-body">
+        <main class="main">
+            <div ng-include="'layout/breadcrumb.html'" ng-if="vmLogin.test"></div>
+            <div ng-view=""></div>
+        </main>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="../../../../Scripts/jquery.min.js"></script>
+    <script src="../../../../Scripts/tether.min.js"></script>
+    <script src="../../../../Scripts/bootstrap.min.js"></script>
+    <script src="../../../../Scripts/pace.min.js"></script>
+
+    <!--AngularJs-->
+    <script src="../../../../Scripts/angular.min.js"></script>
+    <script src="../../../../Scripts/angular-animate.min.js"></script>
+    <script src="../../../../Scripts/angular-cookies.min.js"></script>
+    <script src="../../../../Scripts/angular-resource.min.js"></script>
+    <script src="../../../../Scripts/angular-route.min.js"></script>
+    <script src="../../../../Scripts/angular-sanitize.min.js"></script>
+    <script src="../../../../Scripts/angular-validation-rule.js"></script>
+    <script src="../../../../Scripts/angular-validation.js"></script>
+    <script src="../../../../Scripts/angular-date-interceptor.js"></script>
+
+    <!--ngToast-->
+    <script src="../../../../Scripts/plugins/toast/ngToast.min.js"></script>
+
+    <!--AuthService-->
+    <script src="../../plugins/angular-local-storage.min.js"></script>
+    <script src="../../plugins/loading-bar.min.js"></script>
+
+    <!--Controle Escolar-->
+    <script src="controleescolar.module.js"></script>
+    <script src="controleescolar.route.js"></script>
+    <script src="../../config/controleescolar.validator.js"></script>
+
+    <!--Controllers-->
+    <script src="../../controllers/basecontroller.module.js"></script>
+    <script src="../../controllers/basecontroller.js"></script>
+
+    <!--Factory-->
+    <script src="../../factorys/controleescolar.dataservice.js"></script>
+    <script src="../../factorys/controleescolar.json.js"></script>
+    <script src="../../factorys/controleescolar.utils.js"></script>
+
+    <!--Factory controle de acesso-->
+    <script src="../../factorys/controleescolar.authInterceptorService.js"></script>
+    <script src="../../factorys/controleescolar.authService.js"></script>
+
+    <!--Directives-->
+    <script src="../../directives/grid/jaList.js"></script>
+    <script src="../../directives/select/jaSelect.js"></script>
+    <script src="../../directives/directives.js"></script>
+
+    <!--Filters-->
+    <script src="../../filters/filters.js"></script>
+
+    <!--Login-->
+    <script src="../login/login.module.js"></script>
+    <script src="../login/login.route.js"></script>
+    <script src="../login/login.controller.js"></script>
+
+    <!--Usuario-->
+    <script src="../usuario/usuario.module.js"></script>
+    <script src="../usuario/usuario.route.js"></script>
+    <script src="../usuario/usuario.controller.js"></script>
+
+    <!--Aluno-->
+    <script src="../aluno/aluno.module.js"></script>
+    <script src="../aluno/aluno.route.js"></script>
+
+    <!--sencomec-->
+    <script src="../sensomec/sensomec.module.js"></script>
+    <script src="../sensomec/sensomec.route.js"></script>
+    <script src="../sensomec/sensomec.controller.js"></script>
+</body>
+</html>

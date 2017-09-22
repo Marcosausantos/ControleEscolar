@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ControleEscolar.Data.dll">
+      <publishTime>09/21/2017 16:39:38</publishTime>
+    </File>
+    <File Include="bin/ControleEscolar.Entities.dll">
+      <publishTime>09/21/2017 16:39:37</publishTime>
+    </File>
+    <File Include="bin/ControleEscolar.Infraestructure.dll">
+      <publishTime>09/21/2017 16:39:38</publishTime>
+    </File>
+    <File Include="bin/ControleEscolar.Service.dll">
+      <publishTime>09/21/2017 16:39:39</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/19/2017 17:00:41</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/19/2017 17:00:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>09/19/2017 17:00:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Cors.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>09/19/2017 17:00:43</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>09/19/2017 17:00:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>09/19/2017 17:00:42</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/19/2017 17:00:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/21/2017 16:39:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

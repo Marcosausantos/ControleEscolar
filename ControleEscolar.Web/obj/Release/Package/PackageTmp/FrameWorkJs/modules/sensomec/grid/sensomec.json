@@ -1,0 +1,40 @@
+﻿{
+  "grid": [
+    {
+      "nome": "Id",
+      "caption": "Numero Lote",
+      "class": "",
+      "type": "input",
+      "readonly": true
+    },
+    {
+      "nome": "Competencia",
+      "caption": "Competência",
+      "class": "",
+      "type": "date",
+      "readonly": true
+    },
+    {
+      "nome": "Descricao",
+      "caption": "Descrição",
+      "class": "",
+      "type": "input",
+      "readonly": true
+    },
+    {
+      "nome": "Status",
+      "caption": "Status",
+      "class": "",
+      "type": "input",
+      "readonly": true
+    },
+    {
+      "nome": "NumeroProtocoloRetorno",
+      "caption": "Numero Protocolo Retorno",
+      "class": "",
+      "type": "input",
+      "readonly": true
+    }
+  ]
+}
+

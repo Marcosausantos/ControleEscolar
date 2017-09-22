@@ -1,0 +1,23 @@
+﻿<div class="input-group" id="jsselect">      
+    <select class="form-control"
+            id="select"
+            name="select"
+            ng-disabled="jaReadonly"
+            ng-model="jaModel"
+            ng-options="eSelect as eSelect[jaResultado] for eSelect in jaEntidades track by eSelect.Id"></select>
+    <span class="input-group-btn">
+        <button class="btn btn-purple"
+                type="button"
+                ng-click="jaCustomAdd()"
+                ng-disabled="jaReadonly"
+                ng-show="jaCustomAdd != null ? true : false">
+            <i class="glyphicon glyphicon-plus"></i>
+        </button>
+        <button class="btn btn-default"
+                type="button"
+                ng-click="jaCustomClear != null ? jaCustomClear() : onClear()"
+                ng-disabled="jaReadonly">
+            <i class="fa fa-eraser"></i>
+        </button>
+    </span>    
+</div>

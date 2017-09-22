@@ -1,0 +1,65 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card card-accent-secondary">
+                <div class="card-header">
+                    <h5>{{vm.title}}</h5>
+                </div>
+                <div class="card-block form-horizontal ng-pristine ng-valid">
+                    <div class="portlet-body">
+                        <div ng-include="'../../layout/comando-crud.html'"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <form name="Form">
+                            <div class="form-body">
+                                <div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Nome: <span class="required">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <input class="form-control" type="text" name="UserName" id="UserName" maxlength="50" ng-model="vm.current.UserName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                E-mail: <span class="required">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <input class="form-control" type="email" name="email" id="email" maxlength="100" ng-model="vm.current.Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Senha: <span class="required">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <input class="form-control" type="password" name="senha" id="senha" maxlength="100" ng-model="vm.current.PasswordHash">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Inativo: <span class="required">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <br />
+                                            <input type="checkbox" ng-model="vm.current.Inativo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

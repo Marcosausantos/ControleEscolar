@@ -1,0 +1,13 @@
+D:\controleescolar\ControleEscolar.Entities\bin\Release\ControleEscolar.Entities.dll.config
+D:\controleescolar\ControleEscolar.Entities\bin\Release\ControleEscolar.Entities.dll
+D:\controleescolar\ControleEscolar.Entities\bin\Release\ControleEscolar.Entities.pdb
+D:\controleescolar\ControleEscolar.Entities\bin\Release\EntityFramework.dll
+D:\controleescolar\ControleEscolar.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\controleescolar\ControleEscolar.Entities\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\controleescolar\ControleEscolar.Entities\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\controleescolar\ControleEscolar.Entities\bin\Release\EntityFramework.xml
+D:\controleescolar\ControleEscolar.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\controleescolar\ControleEscolar.Entities\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\controleescolar\ControleEscolar.Entities\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\controleescolar\ControleEscolar.Entities\obj\Release\ControleEscolar.Entities.dll
+D:\controleescolar\ControleEscolar.Entities\obj\Release\ControleEscolar.Entities.pdb

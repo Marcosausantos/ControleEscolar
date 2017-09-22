@@ -1,0 +1,7 @@
+﻿{
+    "grid": [
+        { "nome": "UserName", "caption": "Nome", "class": "col-md-4", "type": "input", "readonly": true },   
+        { "nome": "Email", "caption": "Email", "class": "col-md-4", "type": "input", "readonly": true }   
+    ]
+}
+

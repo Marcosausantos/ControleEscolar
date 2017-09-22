@@ -1,0 +1,67 @@
+﻿<label ng-show="vsCarregarGrid != ''">{{vsCarregarGrid}}</label>
+<table class="table table-bordered table-striped table-responsive" ng-show="vsCarregarGrid == ''">
+    <thead>
+        <tr>
+            <th ng-show="(consultagridpemissao || editgridpermissao || removepermissao) && !jaGridvm.readonly"></th>
+            <th ng-repeat="eColumn in ConfController.grid" ng-class="eColumn.class" ng-click="setOrderBy(eColumn.nome)">
+                {{eColumn.header || eColumn.caption}}
+                <i class="glyphicon" ng-class="{'glyphicon-sort-by-alphabet': orderBy.asc, 'glyphicon-sort-by-alphabet-alt': !orderBy.asc}" ng-show="orderBy.field == '{{eColumn.nome}}'"></i>
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="lscurrent in jaCurrents | orderBy:orderBy.field:!orderBy.asc | startPage:(currentPage * itemsPerPage) | limitTo:itemsPerPage | filter:filterValor ">
+            <td ng-show="(consultagridpemissao || editgridpermissao || removepermissao) && !jaGridvm.readonly">
+                <div class="btn-toolbar" ng-switch on="lscurrent.editMode">
+                    <div class="btn-group" ng-switch-default>
+                        <i class="btn btn-default fa fa-search" ng-click="(jaCustomLer == undefined) ? jaGridvm.editgrid(lscurrent, true) : jaCustomLer(lscurrent)" ng-show="consultagridpemissao"></i>
+                        <i class="btn btn-default fa fa-pencil-square-o" ng-click="(jaCustomEditar == undefined) ? jaGridvm.editgrid(lscurrent) : jaCustomEditar(lscurrent)" ng-show="editgridpermissao"></i>
+                        <i class="btn btn-default fa fa-trash" ng-click="(jaCustomRemove == undefined) ? jaGridvm.remove(lscurrent.Id) : jaCustomRemove(lscurrent.Id)" ng-show="removepermissao"></i>
+
+                    </div>
+                    <div class="btn-group" ng-switch-when="true">
+                        <i class="btn btn-default fa fa-search" ng-click="(jaCustomLer == undefined) ? jaGridvm.editgrid(lscurrent, true) : jaCustomLer(lscurrent)" ng-show="consultagridpemissao"></i>
+                        <i class="btn btn-default fa fa-pencil-square-o" ng-click="(jaCustomSalvar == undefined) ? jaGridvm.savegrid(lscurrent) : jaCustomSalvar(lscurrent)" ng-show="editgridpermissao"></i>
+                        <i class="btn btn-default fa fa-trash" ng-click="(jaCustomCancelar == undefined) ? jaGridvm.cancelgrid(lscurrent) : jaCustomCancelar(lscurrent)" ng-show="editgridpermissao"></i>
+                    </div>
+                </div>
+            </td>
+            <td ng-repeat="eColumn in ConfController.grid">
+                <div ng-switch on="getType(eColumn, lscurrent.editMode)">
+                    <div>
+                        <!--edit-->
+                        <input ng-switch-when="input" ng-model="lscurrent[eColumn.nome]" class="form-control input-sm">
+                        <input ng-switch-when="checkbox" ng-model="lscurrent[eColumn.nome]" type="checkbox">
+                        <input ng-switch-when="date" ng-model="lscurrent[eColumn.nome]" type="date">
+                        <span ng-switch-when="inputsubitem">{{subitem(lscurrent, eColumn.nome)}}</span>
+                        <!--readonly-->
+                        <input ng-switch-when="checkboxreadonly" ng-model="lscurrent[eColumn.nome]" ng-disabled="true" type="checkbox">
+                        <span ng-switch-when="inputreadonly">{{lscurrent[eColumn.nome]}}</span>
+                        <span ng-switch-when="datereadonly">{{lscurrent[eColumn.nome] | date: 'dd/MM/yyyy' }}</span>
+                        <span ng-switch-when="inputsubitemreadonly">{{subitem(lscurrent, eColumn.nome)}}</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <nav>
+        <ul class="pagination">
+            <li ng-class="prevPageDisabled()">
+                <a href ng-click="prevPage()" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                <a>{{n+1}}</a>
+            </li>
+            <li ng-class="nextPageDisabled()">
+                <a href ng-click="nextPage()" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

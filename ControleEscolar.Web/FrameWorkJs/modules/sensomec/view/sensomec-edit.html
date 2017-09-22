@@ -1,0 +1,130 @@
+﻿<div class="container-fluid">
+    <form class="horizontal-form" name="Form">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{vm.title}}</h3>
+            </div>
+            <div class="panel-body">
+                <div class="pad-btm form-inline">
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <button class="btn btn-primary" type="submit" validation-submit="Form" ng-show="!vm.readonly && vm.rotinaConcluida()" ng-click="vm.save(true)">
+                                <i class="fa fa-check"></i> Salvar
+                            </button>
+                            <button class="btn btn-warning" ng-show="vm.readonly && vm.rotinaConcluida()" ng-click="vm.readonly = vm.utils.setreadonlyinput(false); vm.liberaEnvio()">
+                                <i class="fa fa-pencil"></i> Editar
+                            </button>
+                            <button class="btn btn-link" ng-click="vm.cancel()">
+                                <i class="fa fa-chevron-left"></i> Voltar
+                            </button>
+                            <button class="btn btn-primary" ng-show="vm.envioPermitido" ng-click="vm.enviar()">
+                                <i class="fa fa-chevron-left"></i> Enviar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="portlet-body">
+                    <!--Cadastro do aluno-->
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Rotina de Senso MEC</strong>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Competencia: <span class="required">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="month" name="Competencia" id="Competencia" ng-model="vm.current.Competencia">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Numero Lote/Rotina: <span class="required">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="text" name="NumeroRotina" id="NumeroRotina" maxlength="15" ng-model="vm.current.NumeroRotina" readonly>
+                                </div>
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">
+                                        Descrição: <span class="required">
+                                            *
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="text" name="Descricao" id="Descricao" maxlength="50" validator="required" ng-model="vm.current.Descricao">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Data geração: <span class="required">
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="date" name="DataGeracao" id="DataGeracao" ng-model="vm.current.DateGeracao" readonly>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Data Envio: <span class="required">
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="date" name="DataEnvio" id="DataEnvio" ng-model="vm.current.DataEnvio" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Protocolo Retorno: <span class="required">
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="text" name="NumeroProtocoloRetorno" id="NumeroProtocoloRetorno" ng-model="vm.current.NumeroProtocoloRetorno" readonly>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label">
+                                        Status: <span class="required">
+                                        </span>
+                                    </label>
+                                    <input class="form-control" type="text" name="Status" id="Status" ng-model="vm.current.Status" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Cadastro do aluno-->
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Lista de alunos a ser envio</strong>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="table table-responsive">
+                                        <table class="table table-hover table-condensed table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Enviar</th>
+                                                    <th class="col-md-8">Aluno</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="lsAlunos in vm.current.SensoMecItens" ng-hide="!vm.rotinaConcluida() && !lsAlunos.Enviar">
+                                                    <td><input type="checkbox" ng-model="lsAlunos.Enviar" ng-disabled="{{vm.readonly}}" /></td>
+                                                    <td>{{lsAlunos.Aluno.Nome}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,303 @@
+﻿<div class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{vm.title}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-12" ng-include="'../../layout/comando-crud.html'"></div>
+                </div>
+            </div>
+            <br />
+            <div class="portlet-body">
+                <form class="horizontal-form" name="Form">
+                    <div class="form-body">
+                        <!--Cadastro do aluno-->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Aluno</strong>
+                            </div>
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Nome: <span class="required">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <input class="form-control" type="text" name="Nome" id="Nome" maxlength="50" validator="required" ng-model="vm.current.Nome">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label class="control-label">
+                                            Nome do Pai: 
+                                        </label>
+                                        <input class="form-control" type="text" name="NomePai" id="NomePai" maxlength="50" ng-model="vm.current.NomePai">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label class="control-label">
+                                            Nome do Mãe: <span class="required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <input class="form-control" type="text" name="NomeMae" id="NomeMae" maxlength="50" validator="required" ng-model="vm.current.NomeMae">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            RG: 
+                                        </label>
+                                        <input class="form-control" type="text" name="RG" id="RG" maxlength="50" ng-model="vm.current.RG">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            CPF:
+                                        </label>
+                                        <input class="form-control" type="text" name="CPF" id="CPF" maxlength="50" ng-model="vm.current.CPF">
+                                    </div>
+                                    <div class="form-group col-sm-4" >
+                                        <label class="control-label">
+                                            Data de nascimento: <span class="required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <input class="form-control" 
+                                               type="date" 
+                                               name="DataNascimento" 
+                                               id="DataNascimento" 
+                                               validator="required"
+                                               ng-model="vm.current.DataNascimento">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <label class="control-label">
+                                            Inativo: 
+                                        </label>
+                                        <br />
+                                        <input type="checkbox" ng-model="vm.current.Inativo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Endereço do aluno-->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Endereço do aluno</strong>
+                            </div>
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="form-group col-sm-8">
+                                        <label class="control-label">
+                                            Logradouro: 
+                                        </label>
+                                        <input class="form-control" type="text" name="LogradouroAluno"
+                                               id="LogradouroAluno" maxlength="50" ng-model="vm.current.LogradouroAluno">
+                                    </div>
+                                    <div class="form-group  col-sm-4">
+                                        <label class="control-label">
+                                            Número: 
+                                        </label>
+                                        <input class="form-control" type="text" name="NumeroAluno"
+                                               id="NumeroAluno" maxlength="50" ng-model="vm.current.NumeroAluno">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            CEP:
+                                        </label>
+                                        <input class="form-control" type="text" name="CEPAluno"
+                                               id="CEPAluno" maxlength="50" ng-model="vm.current.CEPAluno">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Complemento: 
+                                        </label>
+                                        <input class="form-control" type="text" name="ComplementoAluno"
+                                               id="ComplementoAluno" maxlength="50" ng-model="vm.current.ComplementoAluno">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Bairro: 
+                                        </label>
+                                        <input class="form-control" type="text" name="BairroAluno"
+                                               id="BairroAluno" maxlength="50" ng-model="vm.current.BairroAluno">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Telefone: 
+                                        </label>
+                                        <input class="form-control" type="text" name="TelefoneAluno"
+                                               id="TelefoneAluno" maxlength="50" ng-model="vm.current.TelefoneAluno">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Estado:
+                                        </label>
+                                        <ja-select jacontroller="'estado'"
+                                                   jamodel="vm.current.EstadoAluno"
+                                                   jaresultado="'Nome'"
+                                                   jaReadonly="vm.readonly"></ja-select>
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Municipio: 
+                                        </label>
+                                        <ja-select jacontroller="'municipio'"
+                                                   jamodel="vm.current.MunicipioAluno"
+                                                   jaresultado="'Nome'"
+                                                   jaReadonly="vm.readonly"></ja-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Responsavel do aluno-->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Responsável financeiro</strong>
+                            </div>
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <label class="control-label">
+                                            Nome Responsavel: <span class="required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <input class="form-control" type="text" name="NomeResponsavel"
+                                               id="NomeResponsavel" maxlength="50" validator="required" ng-model="vm.current.NomeResponsavel">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            CPF Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="CPFResponsavel"
+                                               id="CPFResponsavel" maxlength="50" ng-model="vm.current.CPFResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            RG Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="RGResponsavel"
+                                               id="RGResponsavel" maxlength="50" ng-model="vm.current.RGResponsavel">
+                                    </div>
+                                     <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            E-mail Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="EmailResponsavel"
+                                               id="EmailResponsavel" maxlength="50" ng-model="vm.current.EmailResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Opcao pagamento: 
+                                        </label>
+                                        <select class="form-control" name="OpcaoPagamento" id="OpcaoPagamento" ng-model="vm.current.OpcaoPagamento">
+                                            <option value="D">Debito em Conta</option>
+                                            <option value="B">Boleto Bancario</option>
+                                            <option value="C">Carnê</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Percentual Desconto:
+                                        </label>
+                                        <input class="form-control" type="text" name="PercentualDesconto"
+                                               id="PercentualDesconto" maxlength="50" ng-model="vm.current.PercentualDesconto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Responsavel do aluno-->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Endereço do responsável financeiro</strong>
+                            </div>
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="form-group col-sm-8">
+                                        <label class="control-label">
+                                            Logradouro Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="LogradouroResponsavel"
+                                               id="LogradouroResponsavel" maxlength="50" ng-model="vm.current.LogradouroResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Número Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="NumeroResponsavel"
+                                               id="NumeroResponsavel" maxlength="50" ng-model="vm.current.NumeroResponsavel">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            CEP Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="CEPResponsavel"
+                                               id="CEPResponsavel" maxlength="50" ng-model="vm.current.CEPResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Complemento Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="ComplementoResponsavel"
+                                               id="ComplementoResponsavel" maxlength="50" ng-model="vm.current.ComplementoResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Bairro Responsavel: 
+                                        </label>
+                                        <input class="form-control" type="text" name="BairroResponsavel"
+                                               id="BairroResponsavel" maxlength="50" ng-model="vm.current.BairroResponsavel">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Telefone Responsavel:
+                                        </label>
+                                        <input class="form-control" type="text" name="TelefoneResponsavel"
+                                               id="TelefoneResponsavel" maxlength="50" ng-model="vm.current.TelefoneResponsavel">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Estado Resposavel: 
+                                        </label>
+                                        <ja-select jacontroller="'estado'"
+                                                   jamodel="vm.current.EstadoResponsavel"
+                                                   jaresultado="'Nome'"
+                                                   jareadonly="vm.readonly"></ja-select>
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="control-label">
+                                            Municipio Responsavel: 
+                                        </label>
+                                        <ja-select jacontroller="'municipio'"
+                                                   jamodel="vm.current.MunicipioResponsavel"
+                                                   jaresultado="'Nome'"
+                                                   jareadonly="vm.readonly"></ja-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

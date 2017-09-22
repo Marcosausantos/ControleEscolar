@@ -1,0 +1,23 @@
+{
+  "name": "SensoMec",
+  "plural": "SensosMec",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "NomeAluno": {
+      "type": "string",
+      "required": true
+    },
+    "DataNascimento": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,5 @@
+D:\Sources\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.dll
+D:\Sources\controleescolar\ControleEscolar.Web\bin\ControleEscolar.Web.pdb
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Release\ControleEscolar.Web.csprojResolveAssemblyReference.cache
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Release\ControleEscolar.Web.dll
+D:\Sources\controleescolar\ControleEscolar.Web\obj\Release\ControleEscolar.Web.pdb

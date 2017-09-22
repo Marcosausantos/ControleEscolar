@@ -1,0 +1,10 @@
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\BusinessEntity.dll
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\BusinessEntity.pdb
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\obj\Debug\BusinessEntity.dll
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\obj\Debug\BusinessEntity.pdb
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\EntityFramework.dll
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\EntityFramework.SqlServer.dll
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\EntityFramework.xml
+I:\Projetos\WFreitas\branches\Jarvis\BusinessEntity\bin\Debug\EntityFramework.SqlServer.xml
